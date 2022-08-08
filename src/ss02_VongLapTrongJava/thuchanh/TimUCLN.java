@@ -1,4 +1,4 @@
-package VongLapTrongJava.thuchanh;
+package ss02_VongLapTrongJava.thuchanh;
 
 import java.util.Scanner;
 
