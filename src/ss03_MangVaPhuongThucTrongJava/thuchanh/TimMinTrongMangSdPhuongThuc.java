@@ -6,6 +6,7 @@ public class TimMinTrongMangSdPhuongThuc {
         int index = minValue(arr);
         System.out.println("The smallest element in the array is: " + arr[index]);
     }
+
     public static int minValue(int[] array) {
         int index = 0;
         for (int i = 1; i < array.length; i++) {
