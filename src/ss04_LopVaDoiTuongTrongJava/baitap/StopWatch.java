@@ -7,25 +7,30 @@ public class StopWatch {
     private Date endTime = new Date();
 
     public Date getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
+        return this.startTime;
     }
 
     public Date getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+        return this.endTime;
     }
 
     public StopWatch() {
     }
-
-    public Date start() {
-        return startTime;
+    public long start() {
+        return this.startTime.getTime();
+    }
+    public long stop(){
+        return this.endTime.getTime();
+    }
+    public long getElapsedTime(){
+        return this.stop()-this.start();
+    }
+}
+class MainStopWatch{
+    public static void main(String[] args) {
+        StopWatch Ob=new StopWatch();
+        Ob.start();
+        Ob.stop();
+        System.out.println(""+Ob.getElapsedTime());
     }
 }
