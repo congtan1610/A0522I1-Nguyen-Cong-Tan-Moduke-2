@@ -1,4 +1,4 @@
-package ss05.bt;
+package ss05_accessmodifier_stacticmethod.bt;
 
 public class Test {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Test {
         System.out.println(std.setName("tan")+" "+std.setClasses("abc"));
     }
 }
-class Student{
+ class Student{
     private String name="John";
     private String classes="C02";
 

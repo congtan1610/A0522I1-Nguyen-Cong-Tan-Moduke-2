@@ -1,6 +1,4 @@
-package ss05.bt;
-
-import java.util.SplittableRandom;
+package ss05_accessmodifier_stacticmethod.bt;
 
 class Circle{
     private double radius=1.0;

@@ -1,4 +1,4 @@
-package ss05.th;
+package ss05_accessmodifier_stacticmethod.th;
 
 public class TestStaticMethod {
     public static void main(String[] args) {
