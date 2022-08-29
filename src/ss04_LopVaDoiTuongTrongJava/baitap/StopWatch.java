@@ -1,36 +1,40 @@
 package ss04_LopVaDoiTuongTrongJava.baitap;
 
-import java.util.Date;
+import java.util.Scanner;
 
 public class StopWatch {
-    private Date startTime = new Date();
-    private Date endTime = new Date();
-
-    public Date getStartTime() {
-        return this.startTime;
+    long startTime, endTime;
+    public void setStartTime(long startTime) {
+        this.startTime = startTime;
     }
 
-    public Date getEndTime() {
-        return this.endTime;
+    public void setEndTime(long endTime) {
+        this.endTime = endTime;
     }
 
-    public StopWatch() {
+    public long getStartTime() {
+        return startTime;
     }
-    public long start() {
-        return this.startTime.getTime();
+
+    public long getEndTime() {
+        return endTime;
     }
-    public long stop(){
-        return this.endTime.getTime();
+
+    public long timelapse() {
+        return endTime - startTime;
     }
-    public long getElapsedTime(){
-        return this.stop()-this.start();
-    }
-}
-class MainStopWatch{
+
     public static void main(String[] args) {
-        StopWatch Ob=new StopWatch();
-        Ob.start();
-        Ob.stop();
-        System.out.println(""+Ob.getElapsedTime());
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter start: ");
+        long start = scanner.nextLong();
+        System.out.print("Enter end: ");
+        long end = scanner.nextLong();
+        StopWatch stopwatch = new StopWatch();
+        stopwatch.setStartTime(start);
+        stopwatch.setEndTime(end);
+        System.out.print("Timlapse: " + stopwatch.timelapse());
     }
 }
+
+
