@@ -37,15 +37,39 @@ public class TestMyList {
         Student d=new Student(4,"dung");
         Student e=new Student(5,"minh");
         MyList<Student> studentMyList=new MyList<>();
+        //test method add(element)
        studentMyList.add(a);
        studentMyList.add(b);
        studentMyList.add(c);
        studentMyList.add(d);
        studentMyList.add(e);
-
+       //test method size()
+        System.out.println("size: "+studentMyList.size());
+        //test method get()
        for (int i=0;i<studentMyList.size();i++){
-           System.out.printf("\n"+studentMyList.get(i));
+           System.out.println(studentMyList.get(i).getName());
        }
+        //test method remove()
+        studentMyList.remove(0);
+        System.out.println("\nsau khi remove(0)");
+        System.out.println("size: "+studentMyList.size());
+        for (int i=0;i<studentMyList.size();i++){
+            System.out.println(studentMyList.get(i).getName());
+        }
+        //test method contains
+        System.out.println("\nsau khi test contains()");
+        if (!studentMyList.contains(a)){
+            System.out.println(studentMyList.get(0).getName()+"\n");
+        }else System.out.println("null");
+        //test method add(elment,index)
+        studentMyList.add(a,3);
+        for (int i=0;i<studentMyList.size();i++){
+            System.out.println(studentMyList.get(i).getName());
+        }
+        //test method clear
+        studentMyList.clear();
+        System.out.println("\nsau khi clear()");
+        System.out.println("size: "+studentMyList.size());
     }
 }
 //link tham khảo
