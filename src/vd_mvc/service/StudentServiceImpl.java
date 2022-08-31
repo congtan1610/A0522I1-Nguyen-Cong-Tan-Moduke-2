@@ -19,16 +19,16 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public void updateStudent(Student student) {
-
+    repository.updateStudent(student);
     }
 
     @Override
     public void remove(int index) {
-
+        repository.remove(index);
     }
 
     @Override
     public Student findByIndex(int index) {
-        return null;
+        return repository.findByIndex(index);
     }
 }
