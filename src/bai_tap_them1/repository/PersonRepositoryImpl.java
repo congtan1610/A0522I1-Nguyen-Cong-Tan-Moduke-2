@@ -79,13 +79,5 @@ public class PersonRepositoryImpl implements PersonRepository {
         }
     }
 
-    @Override
-    public int getSizeStudent() {
-        return studentList.size();
-    }
 
-    @Override
-    public int getSizeTeacher() {
-        return teacherList.size();
-    }
 }

@@ -15,7 +15,4 @@ public interface PersonRepository {
 
     void removeTeacher(String idRemove);
 
-    int getSizeStudent();
-
-    int getSizeTeacher();
 }

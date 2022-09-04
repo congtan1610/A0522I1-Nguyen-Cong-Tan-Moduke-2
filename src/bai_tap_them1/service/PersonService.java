@@ -15,7 +15,4 @@ public interface PersonService {
 
     void removeTeacher(String idRemove);
 
-    int getSizeStudent();
-
-    int getSizeTeacher();
 }

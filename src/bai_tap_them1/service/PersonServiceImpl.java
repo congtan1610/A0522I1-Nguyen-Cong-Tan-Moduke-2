@@ -37,14 +37,4 @@ public class PersonServiceImpl implements PersonService {
     public void removeTeacher(String idRemove) {
         personRepositoryImpl.removeTeacher(idRemove );
     }
-
-    @Override
-    public int getSizeStudent() {
-        return personRepositoryImpl.getSizeStudent();
-    }
-
-    @Override
-    public int getSizeTeacher() {
-        return personRepositoryImpl.getSizeTeacher();
-    }
 }
