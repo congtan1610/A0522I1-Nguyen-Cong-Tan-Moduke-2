@@ -2,6 +2,9 @@ package vd_mvc.repository;
 
 import vd_mvc.model.Student;
 
+import java.awt.*;
+import java.util.ArrayList;
+
 public class StudentRepositoryImpl implements StudentRepository {
     private static Student[] studentList;
     private static int size = 0;
@@ -13,10 +16,12 @@ public class StudentRepositoryImpl implements StudentRepository {
         studentList[2] = new Student(3, "Nguyen Van C");
         studentList[3] = new Student(4, "Nguyen Van D");
         size = 4;
+
     }
 
     @Override
     public Student[] findAll() {
+
         Student[] students = new Student[size];
         for (int i = 0; i < size; i++) {
             students[i] = studentList[i];
