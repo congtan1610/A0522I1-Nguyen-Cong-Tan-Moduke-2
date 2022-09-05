@@ -3,11 +3,10 @@ package bai_tap_them1.controller;
 import bai_tap_them1.model.Person;
 import bai_tap_them1.service.PersonServiceImpl;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public class PersonController {
-    public static PersonServiceImpl personController;
+    private static PersonServiceImpl personController;
 
     static {
         personController = new PersonServiceImpl();

@@ -1,15 +1,14 @@
 package bai_tap_them1.model;
 
-import java.util.Date;
 
 public class Person {
     public static class Student {
-        String id;
-        String name;
-        Object date;
-        String gender;
-        String className;
-        double point;
+        private String id;
+        private String name;
+        private Object date;
+        private String gender;
+        private String className;
+        private double point;
 
         public Student(String id, String name, Object date, String gender, String className, double point) {
             this.id = id;
@@ -82,11 +81,11 @@ public class Person {
     }
 
     public static class Teacher {
-        String id;
-        String name;
-        Object date;
-        String gender;
-        String specialize;
+        private  String id;
+        private  String name;
+        private Object date;
+        private String gender;
+        private  String specialize;
 
         public Teacher(String id, String name, Object date, String gender, String specialize) {
             this.id = id;

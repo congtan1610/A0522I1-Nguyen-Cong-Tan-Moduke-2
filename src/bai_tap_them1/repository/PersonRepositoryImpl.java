@@ -5,8 +5,8 @@ import bai_tap_them1.model.Person;
 import java.util.ArrayList;
 
 public class PersonRepositoryImpl implements PersonRepository {
-    public ArrayList<Person.Teacher> teacherList;
-    public ArrayList<Person.Student> studentList;
+    private ArrayList<Person.Teacher> teacherList;
+    private ArrayList<Person.Student> studentList;
 
     {
         teacherList = new ArrayList<>();

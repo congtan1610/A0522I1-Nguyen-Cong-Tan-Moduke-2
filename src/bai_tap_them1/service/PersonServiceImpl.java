@@ -3,10 +3,9 @@ package bai_tap_them1.service;
 import bai_tap_them1.model.Person;
 import bai_tap_them1.repository.PersonRepositoryImpl;
 
-import static jdk.internal.org.jline.utils.Colors.s;
 
 public class PersonServiceImpl implements PersonService {
-     PersonRepositoryImpl personRepositoryImpl=new PersonRepositoryImpl();
+   private   PersonRepositoryImpl personRepositoryImpl=new PersonRepositoryImpl();
     @Override
     public void addStudent(Person.Student student) {
         personRepositoryImpl.addStudent(student);
