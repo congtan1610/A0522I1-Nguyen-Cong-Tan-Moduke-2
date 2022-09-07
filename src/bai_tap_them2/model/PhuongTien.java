@@ -33,7 +33,7 @@ public class PhuongTien {
 
         @Override
         public String toString() {
-            return "HangSX{" +
+            return "{" +
                     "maHang='" + maHang + '\'' +
                     ", tenHang='" + tenHang + '\'' +
                     ", quocGia='" + quocGia + '\'' +
@@ -47,13 +47,14 @@ public class PhuongTien {
 
         }
     }
-    public abstract class Chung {
+
+    public static abstract class Chung {
         private String bienSo;
-        private HangSX hang;
+        private Object hang;
         private int namSX;
         private String chu;
 
-        public Chung(String bienSo, HangSX hang, int namSX, String chu) {
+        public Chung(String bienSo, Object hang, int namSX, String chu) {
             this.bienSo = bienSo;
             this.hang = hang;
             this.namSX = namSX;
@@ -103,11 +104,11 @@ public class PhuongTien {
         }
     }
 
-    public class Oto extends Chung {
+    public static class Oto extends Chung {
         private int choNgoi;
         private String kieuXe;
 
-        public Oto(String bienSo, HangSX hang, int namSX, String chu, int choNgoi, String kieuXe) {
+        public Oto(String bienSo, Object hang, int namSX, String chu, int choNgoi, String kieuXe) {
             super(bienSo, hang, namSX, chu);
             this.choNgoi = choNgoi;
             this.kieuXe = kieuXe;
@@ -143,10 +144,10 @@ public class PhuongTien {
 
     }
 
-    public class XeTai extends Chung {
+    public static class XeTai extends Chung {
         private int trongTai;
 
-        public XeTai(String bienSo, HangSX hang, int namSX, String chu, int trongTai) {
+        public XeTai(String bienSo, Object hang, int namSX, String chu, int trongTai) {
             super(bienSo, hang, namSX, chu);
             this.trongTai = trongTai;
         }
@@ -171,10 +172,10 @@ public class PhuongTien {
         }
     }
 
-    public class XeMay extends Chung {
+    public static class XeMay extends Chung {
         private String congSuat;
 
-        public XeMay(String bienSo, HangSX hang, int namSX, String chu, String congSuat) {
+        public XeMay(String bienSo, Object hang, int namSX, String chu, String congSuat) {
             super(bienSo, hang, namSX, chu);
             this.congSuat = congSuat;
         }
