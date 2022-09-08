@@ -4,7 +4,7 @@ import bai_tap_them1.model.Person;
 import bai_tap_them1.repository.PersonRepositoryImpl;
 
 
-public class PersonServiceImpl implements PersonService {
+public class PersonServiceImpl implements IPersonService {
    private   PersonRepositoryImpl personRepositoryImpl=new PersonRepositoryImpl();
     @Override
     public void addStudent(Person.Student student) {

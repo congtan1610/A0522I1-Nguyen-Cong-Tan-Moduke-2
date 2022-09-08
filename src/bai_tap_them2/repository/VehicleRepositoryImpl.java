@@ -5,7 +5,7 @@ import bai_tap_them2.model.PhuongTien;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class VehicleRepositoryImpl implements VehicleRepository {
+public class VehicleRepositoryImpl implements IVehicleRepository {
     private Scanner input = new Scanner(System.in);
     private ArrayList<PhuongTien.Oto> otoList = new ArrayList<>();
     private ArrayList<PhuongTien.XeTai> xeTaiList = new ArrayList<>();

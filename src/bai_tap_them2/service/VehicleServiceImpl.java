@@ -1,9 +1,8 @@
 package bai_tap_them2.service;
 
-import bai_tap_them2.repository.VehicleRepository;
 import bai_tap_them2.repository.VehicleRepositoryImpl;
 
-public class VehicleServiceImpl implements VehicleService {
+public class VehicleServiceImpl implements IVehicleService {
     private VehicleRepositoryImpl vehicleRepository = new VehicleRepositoryImpl();
 
 

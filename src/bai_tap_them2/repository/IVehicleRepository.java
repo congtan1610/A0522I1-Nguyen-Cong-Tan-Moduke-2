@@ -1,6 +1,6 @@
-package bai_tap_them2.service;
+package bai_tap_them2.repository;
 
-public interface VehicleService {
+public interface IVehicleRepository {
     void addOto();
     void addXeTai();
     void addXeMay();

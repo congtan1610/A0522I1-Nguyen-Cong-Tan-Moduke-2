@@ -5,7 +5,7 @@ import ss12_JavaCollectionFramework.ProductManager.model.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductManagerRepositoryImpl implements ProductManagerRepository {
+public class ProductManagerRepositoryImpl implements IProductManagerRepository {
     private static ArrayList<Product> listProduct = new ArrayList<>();
 
     static {

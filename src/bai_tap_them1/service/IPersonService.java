@@ -1,8 +1,8 @@
-package bai_tap_them1.repository;
+package bai_tap_them1.service;
 
 import bai_tap_them1.model.Person;
 
-public interface PersonRepository {
+public interface IPersonService {
     void addStudent(Person.Student student);
 
     void addTeacher(Person.Teacher teacher);

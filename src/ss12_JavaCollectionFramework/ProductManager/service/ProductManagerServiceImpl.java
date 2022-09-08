@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class ProductManagerServiceImpl implements ProductManagerService {
+public class ProductManagerServiceImpl implements IProductManagerService {
     private Scanner input = new Scanner(System.in);
     private ProductManagerRepositoryImpl productManagerRepository = new ProductManagerRepositoryImpl();
 

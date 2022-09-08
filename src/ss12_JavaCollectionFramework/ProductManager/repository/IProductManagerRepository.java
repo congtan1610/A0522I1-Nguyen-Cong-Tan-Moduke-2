@@ -4,7 +4,7 @@ import ss12_JavaCollectionFramework.ProductManager.model.Product;
 
 import java.util.List;
 
-public interface ProductManagerRepository {
+public interface IProductManagerRepository {
     void addProduct(Product product);
     void updateProduct(int id,Product product);
     void removeProduct(int id);

@@ -1,6 +1,6 @@
 package ss12_JavaCollectionFramework.ProductManager.service;
 
-public interface ProductManagerService {
+public interface IProductManagerService {
     void addProduct();
     void updateProduct();
     void removeProduct();
