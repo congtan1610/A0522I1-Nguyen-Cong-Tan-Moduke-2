@@ -1,4 +1,4 @@
-package ThuatToanTimKiem.bt;
+package ss13_ThuatToanTimKiem.bt;
 
 import java.util.LinkedList;
 import java.util.Scanner;
