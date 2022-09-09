@@ -1,6 +1,7 @@
 package ss12_JavaCollectionFramework.ProductManager.model;
 
-import java.util.Objects;
+
+import java.util.Comparator;
 
 public class Product implements Comparable<Product> {
     private int id;
@@ -63,6 +64,6 @@ public class Product implements Comparable<Product> {
 
     @Override
     public int compareTo(Product o) {
-        return this.id-o.id;
+        return this.price-o.price;
     }
 }

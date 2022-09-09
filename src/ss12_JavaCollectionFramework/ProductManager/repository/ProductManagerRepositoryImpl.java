@@ -9,10 +9,10 @@ public class ProductManagerRepositoryImpl implements IProductManagerRepository {
     private static ArrayList<Product> listProduct = new ArrayList<>();
 
     static {
-        listProduct.add(new Product(4, "iphone4", 123));
+        listProduct.add(new Product(4, "iphone4", 1234));
         listProduct.add(new Product(2, "iphone5", 123));
-        listProduct.add(new Product(1, "iphone4", 123));
-
+        listProduct.add(new Product(1, "iphone6", 23));
+        listProduct.add(new Product(3, "iphone4", 2345));
     }
 
     @Override

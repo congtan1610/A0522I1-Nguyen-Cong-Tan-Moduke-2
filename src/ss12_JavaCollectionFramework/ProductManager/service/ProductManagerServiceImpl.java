@@ -61,10 +61,10 @@ public class ProductManagerServiceImpl implements IProductManagerService {
         System.out.print("Nhập tên sản phẩm muốn tìm:");
         String name = input.nextLine();
         List<Product> search = productManagerRepository.searchByName(name);
-        if (search==null){
+        if (search == null) {
             System.out.println("không tìm thấy");
-        }else{
-            for (Product product:search){
+        } else {
+            for (Product product : search) {
                 System.out.println(product);
             }
         }
@@ -72,14 +72,33 @@ public class ProductManagerServiceImpl implements IProductManagerService {
 
     @Override
     public void sortProduct() {
+        System.out.println("1.tăng dần");
+        System.out.println("2.giảm dần");
+        System.out.println("chọn:");
+        int choose = Integer.parseInt(input.nextLine());
         List<Product> list = productManagerRepository.findAllProduct();
         Collections.sort(list);
-        if (list == null) {
-            System.out.println("Danh sách trống");
-        } else {
-            for (Product product : list) {
-                System.out.println(product);
-            }
+        switch (choose){
+            case 1:
+                if (list == null) {
+                    System.out.println("Danh sách trống");
+                } else {
+                    for (Product product : list) {
+                        System.out.println(product);
+                    }
+                }
+                break;
+            case 2:
+                if (list == null) {
+                    System.out.println("Danh sách trống");
+                } else {
+                    for (int i = list.size()-1; i >=0 ; i--) {
+                        System.out.println(list.get(i));
+                    }
+                }
+                break;
+            default:
+                System.out.println("chọn sai chức năng");
         }
     }
 }
