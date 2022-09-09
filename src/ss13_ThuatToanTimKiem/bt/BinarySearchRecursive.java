@@ -1,5 +1,6 @@
 package ss13_ThuatToanTimKiem.bt;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class BinarySearchRecursive {
@@ -33,6 +34,7 @@ public class BinarySearchRecursive {
             System.out.println("Not found!");
         } else {
             System.out.println(array[binarySearch(array, 0, n - 1, numS)]);
+            System.out.println(array[Arrays.binarySearch(array,numS)]);
         }
     }
 
