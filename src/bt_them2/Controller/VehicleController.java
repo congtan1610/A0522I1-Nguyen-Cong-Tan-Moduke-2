@@ -1,4 +1,4 @@
-package demo_mvc.Controller;
+package bt_them2.Controller;
 
 import java.util.Scanner;
 

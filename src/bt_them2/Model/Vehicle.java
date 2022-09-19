@@ -1,4 +1,4 @@
-package demo_mvc.Model;
+package bt_them2.Model;
 
 import java.util.Objects;
 
@@ -164,12 +164,16 @@ public class Vehicle {
         }
     }
 
-    public class Motor extends All {
+    public static class Motor extends All {
         private Integer congSuat;
 
         public Motor(String bienKS, Object hangSX, Integer namSX, String chu, Integer congSuat) {
             super(bienKS, hangSX, namSX, chu);
             this.congSuat = congSuat;
+        }
+
+        public Motor(String bienKS) {
+            super(bienKS);
         }
 
         public Integer getCongSuat() {
@@ -192,12 +196,16 @@ public class Vehicle {
         }
     }
 
-    public class Truck extends All {
+    public static class Truck extends All {
         private Integer trongTai;
 
         public Truck(String bienKS, Object hangSX, Integer namSX, String chu, Integer trongTai) {
             super(bienKS, hangSX, namSX, chu);
             this.trongTai = trongTai;
+        }
+
+        public Truck(String bienKS) {
+            super(bienKS);
         }
 
         public Integer getTrongTai() {

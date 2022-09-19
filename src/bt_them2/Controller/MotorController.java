@@ -1,9 +1,13 @@
-package demo_mvc.Controller;
+package bt_them2.Controller;
+
+import bt_them2.Service.VehicleService;
 
 import java.util.Scanner;
 
 public class MotorController {
-    void controller(){
+    private VehicleService vehicleService = new VehicleService();
+
+    void controller() {
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("Chọn chức năng:\n" +
@@ -16,15 +20,16 @@ public class MotorController {
             int choose = Integer.parseInt(input.nextLine());
             switch (choose) {
                 case 1:
-
+                    vehicleService.addMotor();
                     break;
                 case 2:
-
+                    vehicleService.findAllMotor();
                     break;
                 case 3:
-
+                    vehicleService.deleteMotor();
                     break;
                 case 4:
+                    vehicleService.findByIdMotor();
                     break;
                 case 5:
                     return;

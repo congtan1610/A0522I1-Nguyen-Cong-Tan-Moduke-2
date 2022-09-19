@@ -1,34 +1,35 @@
-package demo_mvc.Controller;
+package bt_them2.Controller;
 
-import demo_mvc.Service.VehicleService;
+import bt_them2.Service.VehicleService;
 
 import java.util.Scanner;
 
-public class OtoController {
+public class TruckController {
     private VehicleService vehicleService=new VehicleService();
-    public void controller() {
+
+    void controller() {
         Scanner input = new Scanner(System.in);
         do {
             System.out.print("Chọn chức năng:\n" +
-                    "1. Thêm mới oto.\n" +
-                    "2. Hiện thị oto\n" +
-                    "3. Xóa oto\n" +
-                    "4. Tìm kiếm theo biển kiểm soát oto\n" +
+                    "1. Thêm mới xe tải.\n" +
+                    "2. Hiện thị xe tải\n" +
+                    "3. Xóa xe tải\n" +
+                    "4. Tìm kiếm theo biển kiểm soát xe tải\n" +
                     "5. Thoát\n");
             System.out.print("Mời chọn:");
             int choose = Integer.parseInt(input.nextLine());
             switch (choose) {
                 case 1:
-                    vehicleService.addOto();
+                    vehicleService.addTruck();
                     break;
                 case 2:
-                    vehicleService.findAllOto();
+                    vehicleService.findAllTruck();
                     break;
                 case 3:
-                    vehicleService.deleteOto();
+                    vehicleService.deleteTruck();
                     break;
                 case 4:
-                    vehicleService.findByIdOto();
+                    vehicleService.findByIdTruck();
                     break;
                 case 5:
                     return;

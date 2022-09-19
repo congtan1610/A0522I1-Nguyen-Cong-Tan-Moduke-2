@@ -1,6 +1,6 @@
-package demo_mvc.Repository;
+package bt_them2.Repository;
 
-import demo_mvc.Model.Vehicle;
+import bt_them2.Model.Vehicle;
 
 import java.util.List;
 
@@ -15,6 +15,6 @@ public interface IVehicleRepository {
     void deleteTruck(Vehicle.Truck truck);
     void deleteMotor(Vehicle.Motor motor);
     Vehicle.Oto findByIdOto(String bks);
-    void findByIdTruck(String bks);
-    void findByIdMotor(String bks);
+    Vehicle.Truck findByIdTruck(String bks);
+    Vehicle.Motor findByIdMotor(String bks);
 }

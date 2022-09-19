@@ -1,4 +1,4 @@
-package demo_mvc.Service;
+package bt_them2.Service;
 
 public interface IVehicleService {
     void addOto();

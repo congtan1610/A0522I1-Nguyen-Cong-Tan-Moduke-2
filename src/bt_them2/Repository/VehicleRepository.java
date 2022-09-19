@@ -1,6 +1,6 @@
-package demo_mvc.Repository;
+package bt_them2.Repository;
 
-import demo_mvc.Model.Vehicle;
+import bt_them2.Model.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,12 +65,20 @@ public class VehicleRepository implements IVehicleRepository {
     }
 
     @Override
-    public void findByIdTruck(String bks) {
-
+    public Vehicle.Truck findByIdTruck(String bks) {
+        if (trucks.indexOf(new Vehicle.Truck(bks)) == -1) {
+            return null;
+        } else {
+            return trucks.get(trucks.indexOf(new Vehicle.Truck(bks)));
+        }
     }
 
     @Override
-    public void findByIdMotor(String bks) {
-
+    public Vehicle.Motor findByIdMotor(String bks) {
+        if (motors.indexOf(new Vehicle.Motor(bks)) == -1) {
+            return null;
+        } else {
+            return motors.get(motors.indexOf(new Vehicle.Motor(bks)));
+        }
     }
 }
