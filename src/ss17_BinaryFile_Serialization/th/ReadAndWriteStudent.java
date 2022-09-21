@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ReadAndWriteStudent {
     public static class Student implements Serializable {
+        private final long serialVersionUID=123321;
         private int id;
 
         private String name;
