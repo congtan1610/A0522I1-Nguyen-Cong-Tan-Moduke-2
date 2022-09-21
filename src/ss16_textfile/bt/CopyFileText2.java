@@ -6,19 +6,19 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CopyFileText2 {
-  static   List<Object> objects = new ArrayList<>();
+    static List<Object> objects = new ArrayList<>();
 
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Nhập file nguồn:");
-        String in=input.nextLine();
+        String in = input.nextLine();
         System.out.println("Nhập file nhận:");
-        String out=input.nextLine();
+        String out = input.nextLine();
         readFile(in);
         writeFile(out);
     }
 
-   static void readFile(String fileIn) {
+    static void readFile(String fileIn) {
         try {
             File in = new File(fileIn);
             BufferedReader br = new BufferedReader(new FileReader(in));
@@ -36,7 +36,7 @@ public class CopyFileText2 {
         }
     }
 
-   static void writeFile(String fileOut) {
+    static void writeFile(String fileOut) {
         try {
             File out = new File(fileOut);
             BufferedWriter bw = new BufferedWriter(new FileWriter(out, true));
