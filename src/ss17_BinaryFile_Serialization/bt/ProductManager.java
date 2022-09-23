@@ -103,7 +103,7 @@ public class ProductManager {
         ObjectInputStream ois=new ObjectInputStream(new FileInputStream(filePath));
         List<Product> product=(List<Product>) ois.readObject();
         System.out.println(product);
-        //đọc file ra products list
+        //---đọc file ra products list
         for (Product x:product){
             products.add( x);
         }
@@ -137,7 +137,6 @@ public class ProductManager {
         }
     }
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-
         ProductManager product=new ProductManager();
         do{
             System.out.println("---Product Manager---");
@@ -154,8 +153,13 @@ public class ProductManager {
                     break;
                 case 2:
                     products.clear();
-                    product.read();
-//                    check products list
+                    try {
+                        product.read();
+                    }catch (Exception e)
+                    {
+                        System.out.println("File null");
+                    }
+//                    ---check products list
 //                    for (Product x:products){
 //                        System.out.println(x);
 //                    }
