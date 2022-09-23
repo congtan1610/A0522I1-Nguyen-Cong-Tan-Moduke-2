@@ -82,7 +82,8 @@ public class ProductManager {
     }
     void read() throws IOException, ClassNotFoundException {
         ObjectInputStream ois=new ObjectInputStream(new FileInputStream(filePath));
-        System.out.println(ois.readObject());
+        List<Product> product=(List<Product>) ois.readObject();
+        System.out.println(product);
         ois.close();
     }
 
