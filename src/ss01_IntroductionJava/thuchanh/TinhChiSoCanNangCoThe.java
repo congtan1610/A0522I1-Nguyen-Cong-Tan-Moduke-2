@@ -7,10 +7,10 @@ public class TinhChiSoCanNangCoThe {
 
         Scanner scanner = new Scanner(System.in);
         double weight, height, bmi;
-        System.out.print("Your weight (in kilogram):");
+        System.out.print("Your weight (in.txt kilogram):");
         weight = scanner.nextDouble();
 
-        System.out.print("Your height (in meter):");
+        System.out.print("Your height (in.txt meter):");
         height = scanner.nextDouble();
         bmi = weight / Math.pow(height, 2);
         System.out.printf("%-20s%s", "bmi", "Interpretation\n");

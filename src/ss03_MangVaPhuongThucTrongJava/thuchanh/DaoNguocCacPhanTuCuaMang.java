@@ -20,7 +20,7 @@ public class DaoNguocCacPhanTuCuaMang {
             array[i] = scanner.nextInt();
             i++;
         }
-        System.out.printf("%-20s%s", "Elements in array: ", "");
+        System.out.printf("%-20s%s", "Elements in.txt array: ", "");
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }

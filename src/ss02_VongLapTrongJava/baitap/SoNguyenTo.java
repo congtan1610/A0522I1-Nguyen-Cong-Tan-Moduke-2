@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SoNguyenTo {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        System.out.printf("Nhập số lương số nguyên tố cần in ra:");
+        System.out.printf("Nhập số lương số nguyên tố cần in.txt ra:");
         int number=input.nextInt();
         int count=0;
         int N=2;

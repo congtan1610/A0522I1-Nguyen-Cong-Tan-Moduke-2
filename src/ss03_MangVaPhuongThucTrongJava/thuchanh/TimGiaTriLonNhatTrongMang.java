@@ -32,6 +32,6 @@ public class TimGiaTriLonNhatTrongMang {
                 index = j + 1;
             }
         }
-        System.out.println("\nThe largest property value in the list is " + max + " ,at position " + index);
+        System.out.println("\nThe largest property value in.txt the list is " + max + " ,at position " + index);
     }
 }

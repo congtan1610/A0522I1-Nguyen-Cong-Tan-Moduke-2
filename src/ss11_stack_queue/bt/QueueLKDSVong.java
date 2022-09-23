@@ -52,7 +52,7 @@ public class QueueLKDSVong {
     // Function displaying the elements of Circular Queue
     static void displayQueue(Queue q) {
         Node temp = q.front;
-        System.out.print("\n Elements in Circular Queue are: ");
+        System.out.print("\n Elements in.txt Circular Queue are: ");
         while (temp.link != q.front) {
             System.out.print(" " + temp.data);
             temp = temp.link;
@@ -65,19 +65,19 @@ public class QueueLKDSVong {
         Queue q = new Queue();
         q.front = q.rear = null;
 
-        // Inserting elements in Circular Queue
+        // Inserting elements in.txt Circular Queue
         enQueue(q, 14);
         enQueue(q, 22);
         enQueue(q, 6);
 
-        // Display elements present in Circular Queue
+        // Display elements present in.txt Circular Queue
         displayQueue(q);
 
         // Deleting elements from Circular Queue
         System.out.println("\n Deleted value = " + deQueue(q));
         System.out.println(" Deleted value = " + deQueue(q));
 
-        // Remaining elements in Circular Queue
+        // Remaining elements in.txt Circular Queue
         displayQueue(q);
 
         enQueue(q, 9);
